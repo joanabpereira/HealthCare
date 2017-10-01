@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard IoT</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="header col-xs-12">
+              <img class="header__img" src="img/logo_luz_saude_white.png">
+              <nav class="header__nav">
+                  <ul>
+                      <li class="nav__element nav__element--selected"><a href="matching.html">Matching</a></li>
+                      <li class="nav__element"><a href="cirurgias.html">Cirurgias</a></li>
+                      <li class="nav__element"><a href="#">Templates</a></li>
+                  </ul>
+              </nav>
+            </div>
+        </div>
+      </div>
+      <div class="content container">
+        <div class="search row">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="procedure col-md-4">
+                <h3 class="procedure__title">Atos de Equipamento</h3>
+                <div>
+                    <label class="procedure__label">Especialidade</label>
+                    <br>
+                    <select>
+                        <option>Cardiologia</option>
+                        <option>Urologia</option>
+                        <option>Neurologia</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="procedure__label">Equipamento</label>
+                    <br>
+                    <select>
+                        <option>-</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="procedure__label">Ato</label>
+                    <br>
+                    <select>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+              </div>
+              <div class="client col-md-8">
+                <h3 class="client__title">Cliente</h3>
+                <div class="client__form">
+                    <div>
+                        <label class="client__label" for="cname">Nome do Cliente</label>
+                        <br>
+                        <input type="text" name="cname">
+                    </div>
+                    <div>
+                        <label class="client__label" for="cname">Número de Cliente</label>
+                        <br>
+                        <input type="text" name="cname">
+                    </div>
+                    <div>
+                        <label class="client__label" for="cname">Número do Episódio</label>
+                        <br>
+                        <input type="text" name="cname">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 states">
+                    <h3 class="state__title">Estado</h3>
+                    <div class="buttongroup">
+                        <input id="not" type="radio" value="all" name="market" checked/>
+                        <label class="state__label" for="not">
+                        Não iniciado
+                        </label>
+                        <input id="ongoing" type="radio" value="Netherlands" name="market"/>
+                        <label class="state__label" for="ongoing">
+                        A decorrer
+                        </label>
+                        <input id="relatar" type="radio" value="Belgium" name="market"/>
+                        <label class="state__label" for="relatar">
+                        Por relatar
+                        </label>
+                        <input id="valid" type="radio" value="Germany" name="market"/>
+                        <label class="state__label" for="valid">
+                        Em validação
+                        </label>
+                        <input id="rever" type="radio" value="Germany" name="market"/>
+                        <label class="state__label" for="rever">
+                        A rever
+                        </label>
+                        <input id="final" type="radio" value="Germany" name="market"/>
+                        <label class="state__label" for="final">
+                        Finalizado
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="other row">
+                <div class="col-xs-12">
+                    <h3 class="other__title">Outros</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="other__label" for="rel">Relatado por</label>
+                            <br>
+                            <input type="text" name="rel">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="other__label" for="val">Validado por</label>
+                            <br>
+                            <input type="text" name="val">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="other__label"><input type="checkbox" name="ny"> Minha Agenda</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="other__label" for="date1">Data início</label>
+                            <br>
+                            <input name="date1" type="date">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="other__label" for="date1">Data Fim</label>
+                            <br>
+                            <input name="date2" type="date">
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="prescriptions row">
+          <div class="col-xs-12">
+              <div class="prescriptions__header row">
+                  <h2>Prescrições</h2>
+              </div>
+              <div class="prescriptions__details row">
+                  <div class="col-md-2">
+                      <h4>Cliente:</h4> Luís Almeida
+                  </div>
+                  <div class="col-md-2">
+                      <h4>NHC:</h4> 455563
+                  </div>
+                  <div class="col-md-2 col-md-offset-6">
+                      <label class="other__label"><input type="checkbox" name="ny"> Matching em grupo</label>
+                  </div>
+              </div>
+              <div class="list row">
+                  <table class="list__table">
+                      <thead>
+                          <tr class="list__header">
+                            <th>Ação</th>
+                            <th>Nº episódio</th>
+                            <th>Nº prescrição</th>
+                            <th>Data prescrição</th>
+                            <th>Ato prescrito</th>
+                            <th>Data ação</th>
+                            <th>Prescrito por</th>
+                            <th>Agendado por</th>
+                            <th>Estado</th>
+                            <th>Exame</th>
+                            <th>Relatorio</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="list__row">
+                            <td></td>
+                            <td>523</td>
+                            <td>23</td>
+                            <td>10/07/17</td>
+                            <td></td>
+                            <td></td>
+                            <td>Dr. Miguel Júlio</td>
+                            <td></td>
+                            <td><span class="state__pill state__pill--review">A rever</span></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr class="list__row">
+                            <td></td>
+                            <td>254</td>
+                            <td>11</td>
+                            <td>23/02/17</td>
+                            <td></td>
+                            <td></td>
+                            <td>Dr. Miguel Júlio</td>
+                            <td></td>
+                            <td><span class="state__pill state__pill--final">Finalizado</span></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                      </tbody>
+                    </table>
+              </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

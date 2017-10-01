@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HealthCare - Cirurgias</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="container-fluid">
+            <div class="header row">
+                <div class="header col-xs-12">
+                  <img class="header__img" src="img/logo_luz_saude_white.png">
+                  <nav class="header__nav">
+                      <ul>
+                          <li class="nav__element"><a href="matching.html">Matching</a></li>
+                          <li class="nav__element nav__element--selected"><a href="cirurgias.html">Cirurgias</a></li>
+                          <li class="nav__element"><a href="#">Templates</a></li>
+                      </ul>
+                  </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="breadcrumb row">
+                <div class="col-xs-12">
+                    <h6>Voltar</h6>
+                </div>
+            </div>
+            <!-- Title -->
+            <div class="title row">
+                <div class="col-xs-12">
+                    <h1>Cirurgias</h1>
+                </div>
+            </div>
+            <!-- Search -->
+            <div class="search row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="procedure__label">Especialidade</label>
+                            <br>
+                            <select>
+                                <option>Cardiologia</option>
+                                <option>Urologia</option>
+                                <option>Neurologia</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="client__label" for="cname">Nome do Cliente</label>
+                            <br>
+                            <input type="text" name="cname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="procedure__label">Médicos</label>
+                            <br>
+                            <select>
+                                <option>Dr. Miguel Júlio</option>
+                                <option>Dra. Jani Lourenço</option>
+                                <option>Dr. Tiago Peres</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="client__label" for="cname">Número de Cliente</label>
+                            <br>
+                            <input type="text" name="cname">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="other__label"><input type="checkbox" name="ny"> Com resultados</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="other__label" for="date1">Data início</label>
+                            <br>
+                            <input name="date1" type="date">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="other__label" for="date1">Data Fim</label>
+                            <br>
+                            <input name="date2" type="date">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="vertical-align">
+                                <button>Pesquisar</button>
+                                <button>Limpar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="prescriptions row">
+              <div class="col-xs-12">
+                  <div class="prescriptions__header row">
+                      <h2>Resultados</h2>
+                  </div>
+                  <div class="prescriptions__details row">
+                      <div class="col-md-2">
+                          <h5>Cliente:</h5> Luís Almeida
+                      </div>
+                      <div class="col-md-2">
+                          <h5>NHC:</h5> 455563
+                      </div>
+                  </div>
+                  <div class="prescriptions__details row">
+                      <div class="col-md-3">
+                          <h5>Proposta:</h5> 15564
+                      </div>
+                      <div class="col-md-3">
+                          <h5>Cirurgião:</h5> Miguel Júlio
+                      </div>
+                      <div class="col-md-3">
+                          <h5>Especialidade:</h5> Cardiologia
+                      </div>
+                      <div class="col-md-3">
+                          <h5>Data Cirurgia</h5> 17/02/17 16:03
+                      </div>
+                  </div>
+                  <div class="list row">
+                      <table class="list__table">
+                          <thead>
+                              <tr class="list__header">
+                                <th></th>
+                                <th>Código Procedimento</th>
+                                <th>Procedimento</th>
+                                <th>Lateralidade</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr class="list__row">
+                                <td>
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                    <p class="icon__label">Iniciar</p>
+                                </td>
+                                <td>52.30.98.01</td>
+                                <td>Consulta de Rotina</td>
+                                <td>Sem</td>
+                              </tr>
+                              <tr class="list__row">
+                                <td>
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                    <p class="icon__label">Iniciar</p>
+                                </td>
+                                <td>52.30.98.01</td>
+                                <td>Consulta de Rotina</td>
+                                <td>Sem</td>
+                              </tr>
+                              <tr class="list__row">
+                                <td>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                    <p class="icon__label">Ver</p>
+                                </td>
+                                <td>52.30.98.01</td>
+                                <td>Extracção</td>
+                                <td>Direita</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </body>
+ </html>
